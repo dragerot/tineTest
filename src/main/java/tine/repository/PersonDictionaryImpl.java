@@ -20,6 +20,7 @@ public class PersonDictionaryImpl implements PersonRepository {
         personList.add(new Person("03086529520","Tore Gard"));
         personList.add(new Person("03086529521","Gitter"));
         personList.add(new Person("03086529522","Norla"));
+        personList.add(new Person("0308652952e","Norlawewe"));
         return personList;
     }
 }
