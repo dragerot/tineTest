@@ -19,8 +19,9 @@ public class SampleRestController {
 
     @RequestMapping(value="/person/{id}", method= RequestMethod.GET,produces="application/json" )
     public Person getPerson(@PathVariable String id) {
-        Person person=new Person("03086529520","Tore Gard");
-        return person;
+//        Person person=new Person("03086529520","Tore Gard");
+//        personService.getPerson(id);
+          return personService.getPerson(id);
     }
 
     @RequestMapping(value="", method=RequestMethod.GET,produces="application/json" )

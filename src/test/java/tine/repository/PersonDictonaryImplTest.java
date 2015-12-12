@@ -30,14 +30,14 @@ public class PersonDictonaryImplTest {
 //    }
 
 
-
-    @Test
-    public void test1(){
-
-        PersonDictionaryImpl dic= new PersonDictionaryImpl();
-        List<Person> list=dic.finAll();
-        Assert.assertEquals("03086529520", dic.finAll().get(0).getId());
-        Assert.assertEquals("03086529521", dic.finAll().get(1).getId());
-        Assert.assertEquals("03086529522", dic.finAll().get(2).getId());
-    }
+//
+//    @Test
+//    public void test1(){
+//
+//        PersonDictionaryImpl dic= new PersonDictionaryImpl();
+//        List<Person> list=dic.finAll();
+//        Assert.assertEquals("03086529520", dic.finAll().get(0).getId());
+//        Assert.assertEquals("03086529521", dic.finAll().get(1).getId());
+//        Assert.assertEquals("03086529522", dic.finAll().get(2).getId());
+//    }
 }
