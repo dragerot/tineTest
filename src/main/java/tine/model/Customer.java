@@ -1,12 +1,20 @@
 package tine.model;
 
+import javax.persistence.*;
 
+@Entity
 public class Customer {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
-    private String firstName, lastName;
+    @Column(nullable = false)
+    private String firstName;
+    @Column(nullable = false)
+    private String lastName;
 
-    public Customer(long id, String firstName, String lastName) {
-        this.id = id;
+    protected Customer() {}
+
+    public Customer( String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
