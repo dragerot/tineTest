@@ -23,9 +23,9 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Bean
+    //@Bean
     public CommandLineRunner demo(CustomerRepository repository) {
-        return (args) -> {
+        return  (args) -> {
             // save a couple of customers
             repository.save(new Customer("Jack", "Bauer"));
             repository.save(new Customer("Chloe", "O'Brian"));
